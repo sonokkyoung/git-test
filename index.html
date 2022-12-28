@@ -13,11 +13,26 @@
         #header{position: relative; height: 60px; background-color: #000;}
         #header h1{position: absolute; left: 50%; top: 10px; transform: translateX(-50%);}
         #header h1 img{height: 40px;}
+
+        .gnb{position: relative; background-color: #222;}
+        .gnb ul{display: flex;}
+        .gnb ul li{width: 25%; position: relative;}
+        .gnb ul li::after{content: ""; width: 1px; height: 20px; display: block; position: absolute; right: 0; top: 10px; background-color: #666;}
+        .gnb ul li:last-child:after{display: none;}
+        .gnb ul a{display: block; color: #FFF; text-align: center; line-height: 40px;}
     </style>
 </head>
 <body>
     <header id="header">
         <h1><img src="img/logo2.png" alt="oh, lolly day"></h1>
     </header>
+    <nav class="gnb">
+        <ul>
+            <li><a href="#">MENU</a></li>
+            <li><a href="#">MENU</a></li>
+            <li><a href="#">MENU</a></li>
+            <li><a href="#">MENU</a></li>
+        </ul>
+    </nav>
 </body>
 </html>
